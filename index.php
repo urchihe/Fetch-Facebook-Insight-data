@@ -50,7 +50,7 @@ class Insight {
 
 
     	
-    	$response = $fb->get('/page_id/insights/?metric=page_fan_adds_unique,page_fan_adds,post_reactions_like_total,page_post_engagements,page_actions_post_reactions_like_total,page_actions_post_reactions_love_total,page_actions_post_reactions_wow_total,page_actions_post_reactions_haha_total,page_total_actions,post_reactions_like_total', $accessToken);
+    	$response = $fb->get('/page_id/insights/?metric=page_fan_adds_unique,page_fan_adds,post_reactions_like_total,page_post_engagements,page_actions_post_reactions_like_total,page_actions_post_reactions_love_total,page_actions_post_reactions_wow_total,page_actions_post_reactions_haha_total,page_total_actions,post_reactions_like_total', $accessToken); // Replace {page_id} with your page id
         
         $insights = $response->getGraphEdge()->asArray();
 
