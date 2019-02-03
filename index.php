@@ -58,4 +58,4 @@ class Insight {
     }
 }
 $insihts = new Insight();
-$insihts::index();
+$insihts->index();
