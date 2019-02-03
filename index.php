@@ -28,7 +28,7 @@ class Insight {
         //print_r($tokenMetadata);
  
 // Validation (these will throw FacebookSDKException's when they fail)
-        $tokenMetadata->validateAppId('1447227012039257'); // Replace {app-id} with your app id
+        $tokenMetadata->validateAppId('app_id'); // Replace {app-id} with your app id
 // If you know the user ID this access token belongs to, you can validate it here
 //$tokenMetadata->validateUserId('123');
         $tokenMetadata->validateExpiration();
@@ -50,7 +50,7 @@ class Insight {
 
 
     	
-    	$response = $fb->get('/128062534482289/insights/?metric=page_fan_adds_unique,page_fan_adds,post_reactions_like_total,page_post_engagements,page_actions_post_reactions_like_total,page_actions_post_reactions_love_total,page_actions_post_reactions_wow_total,page_actions_post_reactions_haha_total,page_total_actions,post_reactions_like_total', $accessToken);
+    	$response = $fb->get('/page_id/insights/?metric=page_fan_adds_unique,page_fan_adds,post_reactions_like_total,page_post_engagements,page_actions_post_reactions_like_total,page_actions_post_reactions_love_total,page_actions_post_reactions_wow_total,page_actions_post_reactions_haha_total,page_total_actions,post_reactions_like_total', $accessToken);
         
         $insights = $response->getGraphEdge()->asArray();
 
