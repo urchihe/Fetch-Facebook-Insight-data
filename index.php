@@ -8,7 +8,7 @@ class Insight {
     public function index()
     {
          
-    	$accessToken ='EAAUkPsv2QlkBABopKAtqtpYmPZCRHR2cW12JJGv1PiEa006cE1wkykVPlmFgM3ByYpFNf5JPtDYNU8ZCJgBjnmbcwmgvDQYbGLqZANmmSExOEP4WCB7k8ECANJDNFvnV7B9Y7MLrdrFHrhVUg2rxYx3YZBJYwcPPnTG6ioIX93ZBgTHMzHtQJVGFCj7QvOYY8dvPfqmA5KwZDZD';
+    	$accessToken ='EAAUkPsv2QlkBABopKAtqtpYmPZCRHR2cW12JJGv1PiEa006cE1wkykVPlmFgM3ByYpFNf5JPtDYNU8ZCJgBjnmbcwmgvDQYbGLqZANmmSExOEP4WCB7k8ECANJDNFvnV7B9Y7MLrdrFHrhVUg2rxYx3YZBJYwcPPnTG6ioIX93ZBgTHMzHtQJVGFCj7QvOYY8dvPfqmA5KwZDZD'; // Replace with your access_token
 
     	$data =array();
     	$fb = new Facebook\Facebook([
