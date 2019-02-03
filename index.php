@@ -12,8 +12,8 @@ class Insight {
 
     	$data =array();
     	$fb = new Facebook\Facebook([
-            'app_id' => '1447227012039257', // Replace {app-id} with your app id
-            'app_secret' => '709fe841729da63fc4031c7cefbb5fbb',
+            'app_id' => '', // Replace {app-id} with your app id
+            'app_secret' => '',
             'default_graph_version' => 'v3.1',
             'grant_type'=>'client_credentials',
         ]);
